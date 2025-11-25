@@ -1,9 +1,7 @@
-services:
-  - type: static_site
-    name: greencare
-    env: static
+static_sites:
+  - name: greencare
     buildCommand: npm run build
-    staticPublishPath: dist
+    publishPath: dist
     routes:
       - type: rewrite
         source: "/*"

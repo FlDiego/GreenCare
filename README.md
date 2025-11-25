@@ -36,12 +36,14 @@ En el directorio del proyecto, puedes ejecutar:
 
 ## Despliegue en Render
 
+**IMPORTANTE:** Para que las rutas de la aplicación (como `/tips` o `/contact`) funcionen correctamente al recargar la página, es crucial desplegar este proyecto usando el archivo `render.yaml`.
+
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
 Puedes desplegar este proyecto en [Render](https://render.com/) usando el botón de arriba o siguiendo estos pasos manualmente:
 
-1.  **Sube tu código a un repositorio de GitHub.**
+1.  **Sube tu código a un repositorio de GitHub.** Asegúrate de que el archivo `render.yaml` esté incluido.
 2.  **Crea una cuenta en Render** y conecta tu cuenta de GitHub.
-3.  **Crea un nuevo "Blueprint Service"** en tu dashboard de Render.
+3.  **Crea un nuevo "Blueprint Service"** en tu dashboard de Render. Esto es clave para que Render lea tu `render.yaml`.
 4.  **Selecciona tu repositorio de GitHub.** Render detectará el archivo `render.yaml` y configurará el servicio automáticamente.
 5.  **Haz clic en "Create"** y Render se encargará del resto. Cada vez que hagas un `push` a tu rama principal, Render desplegará los cambios automáticamente.
