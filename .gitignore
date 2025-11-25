@@ -118,6 +118,3 @@ dist-ssr
 
 # Local testing files
 /coverage
-
-# Render
-render.yaml
