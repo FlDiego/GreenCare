@@ -33,3 +33,15 @@ En el directorio del proyecto, puedes ejecutar:
 - `npm run build`: Compila la aplicación para producción.
 - `npm run lint`: Ejecuta el linter para revisar el código.
 - `npm run preview`: Sirve la compilación de producción localmente.
+
+## Despliegue en Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+Puedes desplegar este proyecto en [Render](https://render.com/) usando el botón de arriba o siguiendo estos pasos manualmente:
+
+1.  **Sube tu código a un repositorio de GitHub.**
+2.  **Crea una cuenta en Render** y conecta tu cuenta de GitHub.
+3.  **Crea un nuevo "Blueprint Service"** en tu dashboard de Render.
+4.  **Selecciona tu repositorio de GitHub.** Render detectará el archivo `render.yaml` y configurará el servicio automáticamente.
+5.  **Haz clic en "Create"** y Render se encargará del resto. Cada vez que hagas un `push` a tu rama principal, Render desplegará los cambios automáticamente.
