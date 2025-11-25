@@ -1,7 +1,9 @@
-static_sites:
-  - name: greencare
+services:
+  - type: static_site
+    name: greencare
+    env: static # El entorno es estático, pero los comandos de compilación se ejecutan en un entorno Node.js
     buildCommand: npm run build
-    publishPath: dist
+    staticPublishPath: dist
     routes:
       - type: rewrite
         source: "/*"
