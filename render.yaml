@@ -1,7 +1,8 @@
+# render.yaml - Configuración para un sitio estático en Render
 services:
-  - type: static_site
+  - type: web
     name: greencare
-    env: static # El entorno es estático, pero los comandos de compilación se ejecutan en un entorno Node.js
+    runtime: static
     buildCommand: npm run build
     staticPublishPath: dist
     routes:
