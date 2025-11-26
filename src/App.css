@@ -201,19 +201,22 @@ button[type="submit"]:focus {
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   .header-inner {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
     text-align: center;
   }
   
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
-    width: 100%;
+    width: auto;
   }
 
   nav a {
-    display: block;
     text-align: center;
   }
 
