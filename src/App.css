@@ -170,7 +170,8 @@ input, textarea {
 }
 
 button[type="submit"],
-.large-control {
+.large-control,
+.submit-btn {
   background: var(--primary-bg);
   color: white;
   border: none;
@@ -179,6 +180,21 @@ button[type="submit"],
   border-radius: 6px;
   cursor: pointer;
   text-align: center;
+}
+
+/* Focus visible específico y alto contraste para el botón de envío */
+.submit-btn:focus-visible,
+button[type="submit"]:focus-visible {
+  outline: 3px solid var(--focus-color);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(255,215,0,0.12);
+}
+
+/* También mostrar un claro estado :focus para navegadores que no soporten :focus-visible */
+.submit-btn:focus,
+button[type="submit"]:focus {
+  outline: 3px solid var(--focus-color);
+  outline-offset: 3px;
 }
 
 /* --- RESPONSIVE --- */

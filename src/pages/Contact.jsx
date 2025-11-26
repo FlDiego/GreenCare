@@ -87,7 +87,7 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        <button type="submit" style={{ padding: '10px 20px', cursor: 'pointer' }}>
+        <button type="submit" className="submit-btn">
           Enviar Mensaje
         </button>
       </form>
