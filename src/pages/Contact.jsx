@@ -10,7 +10,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setConfirmationMessage('¡Gracias! Tus datos han sido enviados correctamente.');
+    setConfirmationMessage('¡Gracias! Te has suscrito a nuestra pagina.');
     setFormData({ name: '', email: '', message: '' });
     setTimeout(() => {
       setConfirmationMessage('');
@@ -91,11 +91,10 @@ const Contact = () => {
           Enviar Mensaje
         </button>
       </form>
-      {confirmationMessage && (
-        <div aria-live="polite" style={{ marginTop: '20px', color: 'green', fontWeight: 'bold' }}>
-          {confirmationMessage}
-        </div>
-      )}
+      {/* La región ARIA-live siempre debe estar en el DOM para anunciar los cambios de contenido */}
+      <div aria-live="assertive" role="status" style={{ marginTop: '20px', color: 'green', fontWeight: 'bold', minHeight: '1.5em' }}>
+        {confirmationMessage}
+      </div>
     </section>
   );
 };

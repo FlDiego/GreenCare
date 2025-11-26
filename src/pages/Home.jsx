@@ -20,11 +20,10 @@ const Home = () => {
       {/* Requisito: Imagen decorativa (alt vacío) [cite: 28, 29] */}
       <div style={{ textAlign: 'center', margin: '20px 0' }}>
         <img 
-          src="https://via.placeholder.com/100" 
-          alt="" 
+          src="/planta.jpg" 
+          alt="Foto de una planta de interior saludable en una maceta decorativa" 
           style={{ borderRadius: '50%' }} 
         />
-        <p><em>(Icono decorativo de hoja)</em></p>
       </div>
 
       <h2>Recursos Recomendados</h2>
