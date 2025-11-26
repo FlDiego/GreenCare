@@ -4,26 +4,30 @@ const Home = () => {
   return (
     <section>
       {/* Requisito: Niveles de encabezado (h1 usado en header, aquí h2) [cite: 15] */}
-      <h2>Bienvenido al mundo verde</h2>
-      
-      {/* Requisito: Al menos 2 párrafos por nivel de encabezado [cite: 20] */}
-      <p>
-        Las plantas de interior no solo decoran nuestro hogar, sino que también purifican el aire
-        y mejoran nuestro estado de ánimo. En este sitio web, queremos compartir contigo la pasión
-        por la naturaleza dentro de casa, ofreciendo guías simples para principiantes.
-      </p>
-      <p>
-        No importa si tienes poco espacio o poca luz, siempre hay una planta adecuada para ti.
-        Explora nuestras secciones para aprender sobre riego, luz y trasplante.
-      </p>
-
-      {/* Requisito: Imagen decorativa (alt vacío) [cite: 28, 29] */}
-      <div style={{ textAlign: 'center', margin: '20px 0' }}>
-        <img 
-          src="/planta.jpg" 
-          alt="Foto de una planta de interior saludable en una maceta decorativa" 
-          style={{ borderRadius: '50%' }} 
-        />
+      <div className="about-section">
+        <div className="about-text">
+          <h2>Bienvenido al mundo verde</h2>
+          
+          {/* Requisito: Al menos 2 párrafos por nivel de encabezado [cite: 20] */}
+          <p>
+            Las plantas de interior no solo decoran nuestro hogar, sino que también purifican el aire
+            y mejoran nuestro estado de ánimo. En este sitio web, queremos compartir contigo la pasión
+            por la naturaleza dentro de casa, ofreciendo guías simples para principiantes.
+          </p>
+          <p>
+            No importa si tienes poco espacio o poca luz, siempre hay una planta adecuada para ti.
+            Explora nuestras secciones para aprender sobre riego, luz y trasplante.
+          </p>
+        </div>
+        
+        {/* Requisito: Imagen decorativa (alt vacío) [cite: 28, 29] */}
+        <div className="about-image">
+          <img 
+            src="/planta.jpg" 
+            alt="Foto de una planta de interior saludable en una maceta decorativa" 
+            className="responsive-image"
+          />
+        </div>
       </div>
 
       <h2>Recursos Recomendados</h2>

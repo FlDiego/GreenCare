@@ -5,6 +5,7 @@
   --text-main: #333;
   --text-light: #fff;
   --focus-color: #FFD700; /* Amarillo contraste */
+  --link-color: #0b3d1a; /* Enlace con alto contraste */
 }
 
 /* --- ESTRUCTURA PRINCIPAL --- */
@@ -56,13 +57,23 @@ nav a {
   text-decoration: none;
   font-weight: 500;
   font-size: 1.1rem;
-  padding: 5px 10px;
+  padding: 10px 14px; /* Aumentado para mejor objetivo táctil */
   border-radius: 4px;
   transition: background 0.2s;
 }
 
 nav a:hover {
   background-color: rgba(255,255,255,0.2);
+}
+
+/* Clase reutilizable para objetivos táctiles grandes */
+.large-control {
+  display: inline-block;
+  min-height: 44px; /* Tamaño mínimo recomendado para objetivos táctiles */
+  padding: 10px 14px;
+  line-height: 1.2;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 
 /* CTA Button */
@@ -100,11 +111,18 @@ section {
   box-sizing: border-box;
 }
 
+/* Encabezados con mayor contraste */
 h2 {
-  color: #2E7D32;
+  color: #072f18; /* Verde oscuro para mejor contraste */
   border-bottom: 2px solid #A5D6A7;
   padding-bottom: 10px;
   margin-top: 0;
+}
+
+/* Enlaces dentro del contenido con alto contraste */
+section a {
+  color: var(--link-color);
+  text-decoration: underline;
 }
 
 /* --- FOOTER --- */
@@ -123,21 +141,36 @@ footer {
   outline-offset: 2px;
 }
 
+/* Estilo para el resumen sencillo */
+.simple-summary {
+  background-color: #e0f2f1; /* Verde muy claro */
+  border-left: 5px solid var(--link-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.simple-summary p {
+  margin: 0.5rem 0 0 0;
+}
+
 /* --- FORMULARIOS --- */
 .form-group { margin-bottom: 1.5rem; }
 label { display: block; font-weight: bold; margin-bottom: 0.5rem; }
 input, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 2px solid #767676; /* Borde más oscuro y grueso para mayor contraste */
   border-radius: 6px;
   font-size: 1rem;
   box-sizing: border-box;
   background: #fff;
   color: #333;
+  min-height: 44px; /* Mejora objetivo táctil para campos */
 }
 
-button[type="submit"] {
+button[type="submit"],
+.large-control {
   background: var(--primary-bg);
   color: white;
   border: none;
@@ -145,6 +178,7 @@ button[type="submit"] {
   font-size: 1.1rem;
   border-radius: 6px;
   cursor: pointer;
+  text-align: center;
 }
 
 /* --- RESPONSIVE --- */
@@ -154,8 +188,61 @@ button[type="submit"] {
     gap: 1rem;
     text-align: center;
   }
+  
   nav ul {
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    text-align: center;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* --- ESTILOS PARA LA SECCIÓN "ACERCA DE" --- */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  width: 150px; /* Tamaño base para la imagen */
+}
+
+/* --- AJUSTES RESPONSIVE PARA LA SECCIÓN "ACERCA DE" --- */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-top: 1rem;
   }
 }

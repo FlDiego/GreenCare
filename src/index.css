@@ -31,9 +31,9 @@ html, body {
 
 a {
   font-weight: 500;
-  color: #3b44fa;
+  color: var(--link-color, #0b3d1a);
   text-decoration: inherit;
 }
 a:hover {
-  color: #141fee;
+  color: #06311a;
 }

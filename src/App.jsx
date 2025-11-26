@@ -26,8 +26,6 @@ function App() {
                 <li><Link to="/contacto">Contacto</Link></li>
               </ul>
             </nav>
-
-            <Link to="/contacto" className="cta-btn">Suscribirse</Link>
           </div>
         </header>
 
