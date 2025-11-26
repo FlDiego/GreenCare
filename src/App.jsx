@@ -42,7 +42,7 @@ function App() {
 
         {/* FOOTER: Visible en todas las páginas */}
         <footer role="contentinfo">
-          <p>© 2025 GreenCare | Contacto: info@rinconplantas.com</p>
+          <p>© 2025 GreenCare | Contacto: info@greencare.com</p>
         </footer>
 
       </div>
