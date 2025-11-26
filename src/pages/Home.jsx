@@ -23,12 +23,13 @@ const Home = () => {
         {/* Requisito: Imagen decorativa (alt vacío) [cite: 28, 29] */}
         <div className="about-image">
           <img 
-            src="/planta.jpg" 
+            src="/plant.png" 
             alt="Foto de una planta de interior saludable en una maceta decorativa" 
             className="responsive-image"
           />
         </div>
       </div>
+      <br />
 
       <h2>Recursos Recomendados</h2>
       <p>

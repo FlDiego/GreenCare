@@ -10,7 +10,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setConfirmationMessage('¡Gracias! Te has suscrito a nuestra pagina.');
+    setConfirmationMessage('¡Gracias! Te responderemos lo mas pronto posible.');
     setFormData({ name: '', email: '', message: '' });
     setTimeout(() => {
       setConfirmationMessage('');
@@ -91,10 +91,26 @@ const Contact = () => {
           Enviar Mensaje
         </button>
       </form>
+
+      
       {/* La región ARIA-live siempre debe estar en el DOM para anunciar los cambios de contenido */}
       <div aria-live="assertive" role="status" style={{ marginTop: '20px', color: 'green', fontWeight: 'bold', minHeight: '1.5em' }}>
         {confirmationMessage}
       </div>
+
+      <section aria-labelledby="response-heading" className="response-section" style={{ marginTop: '1.5rem' }}>
+        <h2 id="response-heading">Tiempo de respuesta y privacidad</h2>
+        <p>
+          Normalmente respondemos dentro de 2 días hábiles. Si tu consulta requiere diagnóstico de una planta,
+          es posible que te pidamos fotos adicionales o detalles para ofrecer una respuesta más precisa.
+          Para eso necesitas mandar un correo electronico a nuestro correo oficial: info@greencare.com
+        </p>
+        <p>
+          Respetamos tu privacidad: no compartimos tu información de contacto con terceros y usamos los
+          mensajes únicamente para mejorar nuestros contenidos y responder a tus dudas.
+        </p>
+      </section>
+
     </section>
   );
 };

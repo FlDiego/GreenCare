@@ -233,7 +233,6 @@ button[type="submit"]:focus {
 .about-section {
   display: flex;
   align-items: center;
-  gap: 2rem;
 }
 
 .about-text {
@@ -248,14 +247,13 @@ button[type="submit"]:focus {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  width: 150px; /* Tamaño base para la imagen */
+  width: 250px; /* Tamaño base para la imagen */
 }
 
 /* --- AJUSTES RESPONSIVE PARA LA SECCIÓN "ACERCA DE" --- */
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;
-    text-align: center;
   }
 
   .about-image {
