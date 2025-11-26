@@ -73,7 +73,7 @@ const Tips = () => {
       <figure>
         <img 
           src="/cactus.png" 
-          alt="Fotografía de una colección de mini cactus en pequeñas macetas de colores sobre un estante" 
+          alt="Los cactus son plantas que necesitan poca agua y mucho sol para crecer saludablemente." 
         />
         <figcaption>Colección de mini cactus variados.</figcaption>
       </figure>

@@ -24,7 +24,7 @@ const Home = () => {
         <div className="about-image">
           <img 
             src="/plant.png" 
-            alt="Foto de una planta de interior saludable en una maceta decorativa" 
+            alt="" 
             className="responsive-image"
           />
         </div>
